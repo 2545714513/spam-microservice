@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
@@ -23,4 +22,3 @@ def predict(data: MessageInput):
         "input_text": data.text,
         "prediction": prediction
     }
-}
